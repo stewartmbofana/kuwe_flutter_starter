@@ -1,0 +1,82 @@
+name: {{ project_name.snakeCase() }}
+description: {{ description }}
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+
+  # Networking
+  dio: ^5.7.0
+  dio_smart_retry: ^7.0.1
+  pretty_dio_logger: ^1.4.0
+
+  # Routing
+  auto_route: ^11.1.0
+
+  # Firebase / Auth / Firestore
+  firebase_core: ^4.11.0
+  firebase_auth: ^6.5.4
+  cloud_firestore: ^6.6.0
+  firebase_messaging: ^16.4.1
+  google_sign_in: ^6.3.0
+  onesignal_flutter: ^5.3.0
+
+  # Utility
+  uuid: ^4.5.1
+  intl: ^0.20.0
+  logger: ^2.4.0
+  envied: ^1.1.0
+  package_info_plus: ^10.2.0
+  device_info_plus: ^13.2.0
+
+  # State Management
+  bloc: ^9.0.0
+  flutter_bloc: ^9.0.0
+  equatable: ^2.1.0
+
+  # Dependency Injection
+  get_it: ^9.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Linter
+  very_good_analysis: ^10.3.0
+
+  # Asset Generation
+  flutter_gen_runner: ^5.8.0
+
+  # Code Generation
+  build_runner: ^2.4.13
+  envied_generator: ^1.1.0
+  auto_route_generator: ^10.6.0
+
+flutter_gen:
+  output: lib/app/generated/
+  line_length: 120
+
+  # Optional
+  integrations:
+    flutter_svg: true
+    flare_flutter: false
+    rive: false
+    lottie: false
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/icons/

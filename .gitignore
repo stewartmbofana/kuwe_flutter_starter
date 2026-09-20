@@ -1,0 +1,18 @@
+# Mason / Dart
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# Hooks build artifacts
+hooks/.dart_tool/
+hooks/build/
+hooks/pubspec.lock
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.idea/
+.vscode/
